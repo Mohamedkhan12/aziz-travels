@@ -1,12 +1,60 @@
-# HooBank - Modern UI/UX website using React.js & Tailwind CSS
+# Aziz Travelland Tours
 
-![HooBank](https://i.ibb.co/BK1Hn0x/Screenshot-2022-08-08-at-4-05-48-PM.png)
+Official website project for **Aziz Travelland Tours**, a Sri Lankan inbound travel company established in 2017 and based in Kolonnawa, Colombo.
 
-### [🌟 Become a top 1% Next.js 13 developer in only one course](https://jsmastery.pro/next13)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
+## About the website
 
-### Showcase your dev skills with practical experience and land the coding career of your dreams
-💻 JS Mastery Pro - https://jsmastery.pro/youtube
-✅ A special YOUTUBE discount code is automatically applied!
+The website introduces the company and its travel services, highlights destinations around Sri Lanka, explains tour inclusions and exclusions, and allows visitors to send trip enquiries through WhatsApp.
 
-📙 Get the Ultimate Frontend & Backend Development Roadmaps, a Complete JavaScript Cheatsheet, Portfolio Tips, and more - https://www.jsmastery.pro/links
+## Main features
+
+- Company profile, mission and vision
+- Travel services and private transport information
+- Destination guide for Sigiriya, Kandy, Nuwara Eliya, Ella, Yala, Mirissa, Galle and Trincomalee
+- Tour package information, inclusions and exclusions
+- Travel and cancellation policy information
+- Contact details and WhatsApp enquiry form
+- Responsive layout for desktop and mobile devices
+
+## Contact details displayed on the website
+
+- **Phone / WhatsApp:** +94 75 851 9429
+- **Email:** aziz.travellandt@gmail.com
+- **Address:** 200/B Kolonnawa Road, Kolonnawa, Colombo, Sri Lanka
+- **Instagram:** [@aziztravels](https://www.instagram.com/aziztravels/)
+
+## Technology
+
+- React
+- Vite
+- Tailwind CSS
+
+## Run locally
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+The production build is generated in the `dist` directory.
+
+## Deployment
+
+The project is configured for deployment through Cloudflare Pages connected to this GitHub repository. The expected build command is `npm run build` and the output directory is `dist`.
+
+---
+
+© Aziz Travelland Tours. All rights reserved.
