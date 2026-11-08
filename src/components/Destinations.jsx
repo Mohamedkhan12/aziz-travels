@@ -26,7 +26,7 @@ const Destinations = () => {
               <div className="h-[210px] overflow-hidden">
                 <img
                   src={destination.image}
-                  alt={destination.name}
+                  alt={`${destination.name}, Sri Lanka`}
                   loading="lazy"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
