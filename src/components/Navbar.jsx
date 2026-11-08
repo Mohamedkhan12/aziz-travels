@@ -1,36 +1,35 @@
-
 import { useState } from "react";
 import { close, menu } from "../assets";
+
+const navLinks = [
+  { id: "home", title: "Home" },
+  { id: "about", title: "About" },
+  { id: "destinations", title: "Destinations" },
+  { id: "services", title: "Services" },
+  { id: "packages", title: "Packages" },
+  { id: "policies", title: "Policies" },
+  { id: "contact", title: "Contact" },
+];
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
-  const navLinks = [
-    { id: "home", title: "Home" },
-    { id: "destinations", title: "Destinations" },
-    { id: "packages", title: "Tour Packages" },
-    { id: "about", title: "About Us" },
-    { id: "contact", title: "Contact" },
-  ];
-
   return (
-    <nav className="w-full flex py-6 justify-between items-center px-6 sm:px-10 lg:px-14">
-      {/* Company Logo */}
-      <a href="#home" className="flex items-center">
+    <nav className="relative z-40 w-full flex py-5 justify-between items-center px-4 sm:px-8 lg:px-12">
+      <a href="#home" className="flex items-center shrink-0">
         <img
           src="/aziz-logo.png"
           alt="Aziz Travelland Tours"
-          className="w-[145px] sm:w-[165px] h-auto object-contain"
+          className="w-[130px] sm:w-[155px] h-auto object-contain"
         />
       </a>
 
-      {/* Desktop Navigation */}
-      <ul className="list-none hidden md:flex justify-end items-center flex-1 gap-8">
+      <ul className="list-none hidden xl:flex justify-end items-center flex-1 gap-5">
         {navLinks.map((nav) => (
           <li key={nav.id}>
             <a
               href={`#${nav.id}`}
-              className="font-poppins font-normal text-white hover:text-[#D5AD69] transition-colors"
+              className="font-poppins text-sm text-white hover:text-[#D5AD69] transition-colors whitespace-nowrap"
             >
               {nav.title}
             </a>
@@ -38,27 +37,30 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Desktop CTA */}
       <a
         href="#contact"
-        className="hidden md:block ml-8 bg-[#D5AD69] text-[#173D32] px-5 py-3 rounded-lg font-semibold hover:bg-[#E8C58A] transition-all"
+        className="hidden xl:block ml-6 bg-[#D5AD69] text-[#173D32] px-5 py-3 rounded-lg font-semibold hover:bg-[#E8C58A] transition-all whitespace-nowrap"
       >
         Plan Your Trip
       </a>
 
-      {/* Mobile Menu */}
-      <div className="md:hidden flex flex-1 justify-end items-center">
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain cursor-pointer"
+      <div className="xl:hidden flex flex-1 justify-end items-center">
+        <button
+          type="button"
+          aria-label={toggle ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={toggle}
           onClick={() => setToggle(!toggle)}
-        />
+          className="p-2"
+        >
+          <img
+            src={toggle ? close : menu}
+            alt=""
+            className="w-[28px] h-[28px] object-contain"
+          />
+        </button>
 
         <div
-          className={`${
-            toggle ? "flex" : "hidden"
-          } p-6 bg-[#173D32] absolute top-20 right-4 mx-2 my-2 min-w-[180px] rounded-xl z-50`}
+          className={`${toggle ? "flex" : "hidden"} absolute top-20 right-4 p-6 bg-[#173D32] min-w-[210px] rounded-xl shadow-xl border border-white/10`}
         >
           <ul className="list-none flex flex-col gap-4 w-full">
             {navLinks.map((nav) => (
@@ -72,6 +74,15 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="#contact"
+                onClick={() => setToggle(false)}
+                className="inline-block mt-2 bg-[#D5AD69] text-[#173D32] px-5 py-3 rounded-lg font-semibold"
+              >
+                Plan Your Trip
+              </a>
+            </li>
           </ul>
         </div>
       </div>
