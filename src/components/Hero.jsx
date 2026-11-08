@@ -1,51 +1,89 @@
-import styles from "../style";
-import { discount, robot } from "../assets";
-import GetStarted from "./GetStarted";
 
 const Hero = () => {
   return (
-    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-          <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">20%</span> Discount For{" "}
-            <span className="text-white">1 Month</span> Account
+    <section
+      id="home"
+      className="relative w-full min-h-[650px] md:min-h-[750px] flex items-center overflow-hidden"
+    >
+      {/* Background Image */}
+      <img
+        src="/sri-lanka-hero.jpg"
+        alt="Beautiful landscape of Sri Lanka"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#10291F]/90 via-[#10291F]/50 to-transparent" />
+
+      {/* Hero Content */}
+      <div className="relative z-10 w-full px-6 sm:px-12 lg:px-20 py-20">
+
+        <div className="max-w-[750px]">
+
+          {/* Small Heading */}
+          <p className="text-[#D5AD69] font-semibold tracking-[4px] text-sm mb-6">
+            WELCOME TO THE PEARL OF THE INDIAN OCEAN
           </p>
-        </div>
 
-        <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            The Next <br className="sm:block hidden" />{" "}
-            <span className="text-gradient">Generation</span>{" "}
+          {/* Main Heading */}
+          <h1 className="font-poppins font-bold text-white text-[45px] sm:text-[60px] md:text-[76px] leading-tight">
+            Discover the
+            <br />
+            Beauty of
+            <br />
+            <span className="text-[#D5AD69]">
+              Sri Lanka.
+            </span>
           </h1>
-          <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
+
+          {/* Description */}
+          <p className="text-white/85 font-poppins text-base sm:text-lg max-w-[550px] mt-7 leading-relaxed">
+            From golden beaches and ancient kingdoms to misty mountains
+            and breathtaking landscapes, experience the magic of Sri Lanka
+            with Aziz Travels.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 mt-9">
+
+            <a
+              href="#destinations"
+              className="bg-[#D5AD69] text-[#173D32] px-8 py-4 rounded-md font-semibold text-center hover:bg-[#E8C58A] transition-all"
+            >
+              Explore Destinations →
+            </a>
+
+            <a
+              href="#contact"
+              className="border border-white text-white px-8 py-4 rounded-md font-semibold text-center hover:bg-white hover:text-[#173D32] transition-all"
+            >
+              Plan Your Trip
+            </a>
+
           </div>
+
+          {/* Travel Highlight */}
+          <div className="flex flex-wrap gap-8 mt-14">
+
+            <div>
+              <h3 className="text-white text-2xl font-bold">25+</h3>
+              <p className="text-white/70 text-sm">Amazing Destinations</p>
+            </div>
+
+            <div>
+              <h3 className="text-white text-2xl font-bold">100%</h3>
+              <p className="text-white/70 text-sm">Personalised Journeys</p>
+            </div>
+
+            <div>
+              <h3 className="text-white text-2xl font-bold">365</h3>
+              <p className="text-white/70 text-sm">Days of Adventure</p>
+            </div>
+
+          </div>
+
         </div>
-
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-          Payment Method.
-        </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our team of experts uses a methodology to identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates,
-          annual fees.
-        </p>
-      </div>
-
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
-
-        {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-        {/* gradient end */}
-      </div>
-
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
       </div>
     </section>
   );

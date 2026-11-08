@@ -1,27 +1,62 @@
-import { feedback } from "../constants";
-import styles from "../style";
-import FeedbackCard from "./FeedbackCard";
 
-const Testimonials = () => (
-  <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}>
-    <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
+const testimonials = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    country: "United Kingdom",
+    message:
+      "Sri Lanka was an unforgettable experience. The beautiful landscapes and cultural attractions made the journey special.",
+  },
+  {
+    id: 2,
+    name: "Michael Brown",
+    country: "Australia",
+    message:
+      "A wonderful destination with so much to explore. We loved discovering the beaches, mountains and local culture.",
+  },
+  {
+    id: 3,
+    name: "Emma Wilson",
+    country: "Germany",
+    message:
+      "An amazing experience exploring Sri Lanka. Every destination had something unique to offer.",
+  },
+];
 
-    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-      <h2 className={styles.heading2}>
-        What People are <br className="sm:block hidden" /> saying about us
-      </h2>
-      <div className="w-full md:mt-0 mt-6">
-        <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-          Everything you need to accept card payments and grow your business
-          anywhere on the planet.
+const Testimonials = () => {
+  return (
+    <section className="py-20">
+      <div className="text-center mb-12">
+        <p className="text-[#D5AD69] font-semibold tracking-[3px] text-sm mb-4">
+          TRAVELLER STORIES
+        </p>
+        <h2 className="text-white font-bold text-3xl sm:text-5xl">
+          Memories That Last Forever
+        </h2>
+        <p className="text-gray-300 mt-5 max-w-2xl mx-auto">
+          Discover what travellers love about exploring the Pearl of the Indian Ocean.
         </p>
       </div>
-    </div>
 
-    <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)}
-    </div>
-  </section>
-);
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {testimonials.map((item) => (
+          <div
+            key={item.id}
+            className="bg-[#173D32] border border-[#315344] rounded-xl p-7"
+          >
+            <div className="text-[#D5AD69] text-3xl mb-4">★★★★★</div>
+            <p className="text-gray-200 text-sm leading-7">
+              "{item.message}"
+            </p>
+            <div className="border-t border-[#315344] mt-6 pt-5">
+              <h3 className="text-white font-semibold">{item.name}</h3>
+              <p className="text-[#D5AD69] text-sm">{item.country}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Testimonials;

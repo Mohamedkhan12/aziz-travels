@@ -1,197 +1,119 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
+  { id: "home", title: "Home" },
+  { id: "destinations", title: "Destinations" },
+  { id: "packages", title: "Tour Packages" },
+  { id: "about", title: "About Us" },
+  { id: "contact", title: "Contact" },
+];
+
+// Sri Lankan destinations
+export const destinations = [
   {
-    id: "home",
-    title: "Home",
+    id: "destination-1",
+    name: "Sigiriya",
+    location: "Central Province",
+    description:
+      "Discover the ancient rock fortress and its breathtaking surroundings.",
+    image: "/images/sigiriya.jpg",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "destination-2",
+    name: "Ella",
+    location: "Uva Province",
+    description:
+      "Explore misty mountains, tea plantations and scenic train journeys.",
+    image: "/images/ella.jpg",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "destination-3",
+    name: "Galle",
+    location: "Southern Province",
+    description:
+      "Experience colonial architecture, historic streets and beautiful beaches.",
+    image: "/images/galle.jpg",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "destination-4",
+    name: "Kandy",
+    location: "Central Province",
+    description:
+      "Discover Sri Lankan culture, heritage and the beautiful hill capital.",
+    image: "/images/kandy.jpg",
+  },
+  {
+    id: "destination-5",
+    name: "Mirissa",
+    location: "Southern Province",
+    description:
+      "Enjoy tropical beaches and relaxing coastal experiences.",
+    image: "/images/mirissa.jpg",
+  },
+  {
+    id: "destination-6",
+    name: "Nuwara Eliya",
+    location: "Central Province",
+    description:
+      "Discover cool mountain weather, tea estates and scenic landscapes.",
+    image: "/images/nuwara-eliya.jpg",
   },
 ];
 
-export const features = [
+// Sample tour packages
+export const tourPackages = [
   {
-    id: "feature-1",
-    icon: star,
-    title: "Rewards",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+    id: "package-1",
+    name: "Sri Lanka Highlights",
+    duration: "7 Days / 6 Nights",
+    description:
+      "Explore Sri Lanka's iconic cultural attractions and scenic landscapes.",
+    image: "/images/sigiriya.jpg",
+    price: "Contact for pricing",
   },
   {
-    id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
+    id: "package-2",
+    name: "Hill Country Escape",
+    duration: "5 Days / 4 Nights",
+    description:
+      "Discover Ella, Nuwara Eliya and the beautiful hill country.",
+    image: "/images/ella.jpg",
+    price: "Contact for pricing",
   },
   {
-    id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
-  },
-];
-
-export const feedback = [
-  {
-    id: "feedback-1",
-    content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
-  },
-  {
-    id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
-  },
-  {
-    id: "feedback-3",
-    content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
+    id: "package-3",
+    name: "Coastal Paradise",
+    duration: "6 Days / 5 Nights",
+    description:
+      "Experience beautiful southern beaches and coastal destinations.",
+    image: "/images/mirissa.jpg",
+    price: "Contact for pricing",
   },
 ];
 
-export const stats = [
+// Proposed travel benefits
+export const travelBenefits = [
   {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    id: "benefit-1",
+    title: "Local Expertise",
+    description:
+      "Discover Sri Lanka with local knowledge and carefully planned experiences.",
   },
   {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    id: "benefit-2",
+    title: "Personalised Trips",
+    description:
+      "Travel experiences designed around your interests and preferences.",
   },
   {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
-  },
-];
-
-export const footerLinks = [
-  {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
+    id: "benefit-3",
+    title: "Dedicated Support",
+    description:
+      "Get assistance when planning your journey.",
   },
   {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
-    ],
-  },
-];
-
-export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
-  },
-];
-
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
+    id: "benefit-4",
+    title: "Memorable Experiences",
+    description:
+      "Explore the culture, nature and attractions of Sri Lanka.",
   },
 ];

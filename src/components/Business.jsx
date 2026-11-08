@@ -1,45 +1,67 @@
-import { features } from "../constants";
-import styles, { layout } from "../style";
-import Button from "./Button";
 
-const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
-    </div>
-    <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
-        {title}
-      </h4>
-      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
-        {content}
-      </p>
-    </div>
-  </div>
-);
+import { travelBenefits } from "../constants";
 
-const Business = () =>  (
-  <section id="features" className={layout.section}>
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle
-        the money.
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
-      </p>
+const Business = () => {
+  return (
+    <section
+      id="about"
+      className="flex md:flex-row flex-col py-20 gap-12"
+    >
+      {/* Left Side */}
+      <div className="flex-1 flex flex-col justify-center">
+        <p className="text-[#D5AD69] font-semibold tracking-[3px] text-sm mb-4">
+          WHY TRAVEL WITH US
+        </p>
 
-      <Button styles={`mt-10`} />
-    </div>
+        <h2 className="font-poppins font-bold text-white text-[38px] sm:text-[48px] leading-tight">
+          Experience Sri Lanka
+          <br />
+          <span className="text-[#D5AD69]">
+            Beyond Expectations.
+          </span>
+        </h2>
 
-    <div className={`${layout.sectionImg} flex-col`}>
-      {features.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} index={index} />
-      ))}
-    </div>
-  </section>
-);
+        <p className="font-poppins text-gray-300 text-base leading-7 max-w-[500px] mt-6">
+          At Aziz Travels, we believe every journey should be special.
+          Discover the beauty, culture and hospitality of Sri Lanka
+          through travel experiences designed around you.
+        </p>
+
+        <a
+          href="#contact"
+          className="bg-[#D5AD69] text-[#173D32] font-semibold px-7 py-4 rounded-md w-fit mt-8 hover:bg-[#E8C58A] transition-all"
+        >
+          Plan Your Journey →
+        </a>
+      </div>
+
+      {/* Right Side */}
+      <div className="flex-1 flex flex-col gap-5">
+        {travelBenefits.map((benefit, index) => (
+          <div
+            key={benefit.id}
+            className="flex gap-5 items-start p-6 rounded-xl bg-[#173D32] border border-[#315344]"
+          >
+            <div className="w-12 h-12 rounded-full bg-[#D5AD69] flex items-center justify-center shrink-0">
+              <span className="text-[#173D32] font-bold text-lg">
+                0{index + 1}
+              </span>
+            </div>
+
+            <div>
+              <h3 className="text-white font-semibold text-lg mb-2">
+                {benefit.title}
+              </h3>
+
+              <p className="text-gray-300 text-sm leading-6">
+                {benefit.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Business;
