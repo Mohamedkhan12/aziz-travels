@@ -37,7 +37,9 @@ export const destinations = [
     id: "yala",
     name: "Yala",
     description: "Explore Sri Lanka's wildlife and natural landscapes with a guided national-park safari.",
-    image: null,
+    image: "https://images.unsplash.com/photo-1705936981588-a4192f66fcfb?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    imageCredit: "Photo by Sach on Unsplash",
+    imageCreditUrl: "https://unsplash.com/photos/a-couple-of-elephants-are-standing-in-the-water-kKeC_lgVs_o",
   },
   {
     id: "mirissa",
@@ -55,7 +57,9 @@ export const destinations = [
     id: "trincomalee",
     name: "Trincomalee",
     description: "Discover pristine beaches, historic temples and the natural beauty of the east coast.",
-    image: null,
+    image: "https://images.unsplash.com/photo-1695090177375-0351b2314e3a?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    imageCredit: "Photo by Sajeevan Balachandran on Unsplash",
+    imageCreditUrl: "https://unsplash.com/photos/a-boat-sitting-on-top-of-a-sandy-beach-1xHhHt1LmDg",
   },
 ];
 
