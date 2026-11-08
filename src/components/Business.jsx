@@ -7,7 +7,7 @@ const services = [
   {
     number: "02",
     title: "Hotels & Lodges",
-    description: "Help arranging accommodation through hotel and lodge partners across Sri Lanka.",
+    description: "Help arranging accommodation through hotel and lodge partners across Sri Lanka. The supplied company information also notes a doctor on call at partner hotels.",
   },
   {
     number: "03",
@@ -17,7 +17,7 @@ const services = [
   {
     number: "04",
     title: "Travel Support",
-    description: "Assistance with itineraries, SIM cards, travel documentation, vacation arrangements and travel insurance enquiries.",
+    description: "Assistance with itineraries, SIM cards, travel documentation, vacation arrangements, travel insurance enquiries and 24/7 customer support.",
   },
 ];
 
