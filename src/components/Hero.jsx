@@ -3,87 +3,57 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-[650px] md:min-h-[750px] flex items-center overflow-hidden"
+      className="w-full min-h-[600px] flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-14 px-6 sm:px-10 lg:px-14 xl:px-16 pt-12 pb-20"
     >
-      {/* Background Image */}
-      <img
-        src="/sri-lanka-hero.jpg"
-        alt="Beautiful landscape of Sri Lanka"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      {/* Left Content */}
+      <div className="flex flex-col justify-center items-start w-full lg:w-[48%]">
+        <p className="text-[#D5AD69] font-semibold tracking-[3px] uppercase text-xs sm:text-sm mb-6">
+          Welcome to Aziz Travelland Tours
+        </p>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#10291F]/90 via-[#10291F]/50 to-transparent" />
+        <h1 className="font-poppins font-bold text-white text-[42px] sm:text-[50px] lg:text-[54px] xl:text-[60px] leading-[1.15]">
+          Discover the Wonders
+          <span className="block text-[#D5AD69]">
+            of Sri Lanka
+          </span>
+        </h1>
 
-      {/* Hero Content */}
-      <div className="relative z-10 w-full px-6 sm:px-12 lg:px-20 py-20">
+        <p className="font-poppins text-gray-300 text-[15px] sm:text-[16px] leading-8 max-w-[540px] mt-6">
+          Explore the beauty, culture and unforgettable experiences of Sri
+          Lanka with Aziz Travelland Tours. From airport transfers and private
+          transportation to personalised cultural, heritage and adventure
+          journeys, we help make your visit memorable.
+        </p>
 
-        <div className="max-w-[750px]">
+        {/* Buttons */}
+        <div className="flex flex-wrap gap-4 mt-8">
+          <a
+            href="#destinations"
+            className="bg-[#D5AD69] text-[#173D32] px-6 sm:px-7 py-3.5 rounded-lg font-semibold hover:bg-[#E8C58A] transition-all duration-300"
+          >
+            Explore Destinations
+          </a>
 
-          {/* Small Heading */}
-          <p className="text-[#D5AD69] font-semibold tracking-[4px] text-sm mb-6">
-            WELCOME TO THE PEARL OF THE INDIAN OCEAN
-          </p>
-
-          {/* Main Heading */}
-          <h1 className="font-poppins font-bold text-white text-[45px] sm:text-[60px] md:text-[76px] leading-tight">
-            Discover the
-            <br />
-            Beauty of
-            <br />
-            <span className="text-[#D5AD69]">
-              Sri Lanka.
-            </span>
-          </h1>
-
-          {/* Description */}
-          <p className="text-white/85 font-poppins text-base sm:text-lg max-w-[550px] mt-7 leading-relaxed">
-            From golden beaches and ancient kingdoms to misty mountains
-            and breathtaking landscapes, experience the magic of Sri Lanka
-            with Aziz Travels.
-          </p>
-
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-9">
-
-            <a
-              href="#destinations"
-              className="bg-[#D5AD69] text-[#173D32] px-8 py-4 rounded-md font-semibold text-center hover:bg-[#E8C58A] transition-all"
-            >
-              Explore Destinations →
-            </a>
-
-            <a
-              href="#contact"
-              className="border border-white text-white px-8 py-4 rounded-md font-semibold text-center hover:bg-white hover:text-[#173D32] transition-all"
-            >
-              Plan Your Trip
-            </a>
-
-          </div>
-
-          {/* Travel Highlight */}
-          <div className="flex flex-wrap gap-8 mt-14">
-
-            <div>
-              <h3 className="text-white text-2xl font-bold">25+</h3>
-              <p className="text-white/70 text-sm">Amazing Destinations</p>
-            </div>
-
-            <div>
-              <h3 className="text-white text-2xl font-bold">100%</h3>
-              <p className="text-white/70 text-sm">Personalised Journeys</p>
-            </div>
-
-            <div>
-              <h3 className="text-white text-2xl font-bold">365</h3>
-              <p className="text-white/70 text-sm">Days of Adventure</p>
-            </div>
-
-          </div>
-
+          <a
+            href="#contact"
+            className="border border-[#D5AD69] text-[#D5AD69] px-6 sm:px-7 py-3.5 rounded-lg font-semibold hover:bg-[#D5AD69] hover:text-[#173D32] transition-all duration-300"
+          >
+            Plan Your Journey
+          </a>
         </div>
+
+        <p className="text-gray-400 text-sm mt-7">
+          Discover Sri Lanka with a locally based travel agency established in 2017.
+        </p>
+      </div>
+
+      {/* Right Image */}
+      <div className="w-full lg:w-[52%]">
+        <img
+          src="/sri-lanka-hero.jpg"
+          alt="Beautiful view of Sigiriya Rock Fortress in Sri Lanka"
+          className="w-full h-[300px] sm:h-[400px] lg:h-[470px] xl:h-[510px] object-cover object-center rounded-2xl shadow-2xl"
+        />
       </div>
     </section>
   );

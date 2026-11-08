@@ -7,113 +7,98 @@ export const navLinks = [
   { id: "contact", title: "Contact" },
 ];
 
-// Sri Lankan destinations
 export const destinations = [
   {
-    id: "destination-1",
+    id: "sigiriya",
     name: "Sigiriya",
-    location: "Central Province",
     description:
-      "Discover the ancient rock fortress and its breathtaking surroundings.",
+      "Discover the ancient Sigiriya Rock Fortress, a remarkable UNESCO World Heritage Site surrounded by beautiful landscapes.",
     image: "/images/sigiriya.jpg",
   },
   {
-    id: "destination-2",
+    id: "ella",
     name: "Ella",
-    location: "Uva Province",
     description:
-      "Explore misty mountains, tea plantations and scenic train journeys.",
+      "Experience Sri Lanka's hill country with scenic mountain views, tea plantations and the famous Nine Arches Bridge.",
     image: "/images/ella.jpg",
   },
   {
-    id: "destination-3",
+    id: "galle",
     name: "Galle",
-    location: "Southern Province",
     description:
-      "Experience colonial architecture, historic streets and beautiful beaches.",
+      "Explore the historic Galle Fort, charming colonial architecture and beautiful southern coastal scenery.",
     image: "/images/galle.jpg",
   },
   {
-    id: "destination-4",
+    id: "kandy",
     name: "Kandy",
-    location: "Central Province",
     description:
-      "Discover Sri Lankan culture, heritage and the beautiful hill capital.",
+      "Visit the cultural capital of Sri Lanka, home to the sacred Temple of the Tooth and beautiful Kandy Lake.",
     image: "/images/kandy.jpg",
   },
   {
-    id: "destination-5",
+    id: "mirissa",
     name: "Mirissa",
-    location: "Southern Province",
     description:
-      "Enjoy tropical beaches and relaxing coastal experiences.",
+      "Enjoy tropical beaches, coastal scenery and relaxing seaside experiences in southern Sri Lanka.",
     image: "/images/mirissa.jpg",
   },
   {
-    id: "destination-6",
+    id: "nuwara-eliya",
     name: "Nuwara Eliya",
-    location: "Central Province",
     description:
-      "Discover cool mountain weather, tea estates and scenic landscapes.",
+      "Discover cool mountain weather, lush tea estates and picturesque landscapes in Sri Lanka's hill country.",
     image: "/images/nuwara-eliya.jpg",
   },
 ];
 
-// Sample tour packages
 export const tourPackages = [
   {
-    id: "package-1",
+    id: "sri-lanka-highlights",
     name: "Sri Lanka Highlights",
-    duration: "7 Days / 6 Nights",
     description:
-      "Explore Sri Lanka's iconic cultural attractions and scenic landscapes.",
+      "Discover a variety of Sri Lankan experiences, including cultural attractions, scenic landscapes and beautiful destinations.",
     image: "/images/sigiriya.jpg",
-    price: "Contact for pricing",
   },
   {
-    id: "package-2",
+    id: "hill-country-escape",
     name: "Hill Country Escape",
-    duration: "5 Days / 4 Nights",
     description:
-      "Discover Ella, Nuwara Eliya and the beautiful hill country.",
+      "Explore the beautiful hill country, with its tea plantations, mountain scenery and charming towns.",
     image: "/images/ella.jpg",
-    price: "Contact for pricing",
   },
   {
-    id: "package-3",
+    id: "coastal-paradise",
     name: "Coastal Paradise",
-    duration: "6 Days / 5 Nights",
     description:
-      "Experience beautiful southern beaches and coastal destinations.",
+      "Experience Sri Lanka's southern coastline, with its beautiful beaches and historic coastal towns.",
     image: "/images/mirissa.jpg",
-    price: "Contact for pricing",
   },
 ];
 
-// Proposed travel benefits
 export const travelBenefits = [
   {
-    id: "benefit-1",
+    id: "local-expertise",
     title: "Local Expertise",
     description:
-      "Discover Sri Lanka with local knowledge and carefully planned experiences.",
+      "Discover Sri Lanka with a locally based travel agency established in 2017.",
   },
   {
-    id: "benefit-2",
-    title: "Personalised Trips",
+    id: "personalised-trips",
+    title: "Personalised Travel",
     description:
-      "Travel experiences designed around your interests and preferences.",
+      "Explore travel arrangements tailored to your interests and preferences.",
   },
   {
-    id: "benefit-3",
-    title: "Dedicated Support",
+    id: "travel-assistance",
+    title: "Travel Assistance",
     description:
-      "Get assistance when planning your journey.",
+      "Get assistance with transportation, accommodation and travel planning.",
   },
   {
-    id: "benefit-4",
-    title: "Memorable Experiences",
+    id: "memorable-experiences",
+    title: "Island Experiences",
     description:
-      "Explore the culture, nature and attractions of Sri Lanka.",
+      "Discover the culture, heritage, beaches and natural beauty of Sri Lanka.",
   },
 ];

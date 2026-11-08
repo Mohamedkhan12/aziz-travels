@@ -1,57 +1,61 @@
 
-const testimonials = [
+const commitments = [
   {
-    id: 1,
-    name: "Sarah Johnson",
-    country: "United Kingdom",
-    message:
-      "Sri Lanka was an unforgettable experience. The beautiful landscapes and cultural attractions made the journey special.",
+    number: "01",
+    title: "Personalised Travel",
+    description:
+      "We help plan journeys around your interests, preferences and travel schedule.",
   },
   {
-    id: 2,
-    name: "Michael Brown",
-    country: "Australia",
-    message:
-      "A wonderful destination with so much to explore. We loved discovering the beaches, mountains and local culture.",
+    number: "02",
+    title: "Local Experiences",
+    description:
+      "Discover Sri Lanka's culture, heritage, landscapes and attractions.",
   },
   {
-    id: 3,
-    name: "Emma Wilson",
-    country: "Germany",
-    message:
-      "An amazing experience exploring Sri Lanka. Every destination had something unique to offer.",
+    number: "03",
+    title: "Travel Assistance",
+    description:
+      "Get assistance with transportation, accommodation arrangements and travel planning.",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="py-20">
-      <div className="text-center mb-12">
-        <p className="text-[#D5AD69] font-semibold tracking-[3px] text-sm mb-4">
-          TRAVELLER STORIES
+    <section className="py-16">
+      <div className="text-center mb-14">
+        <p className="text-[#D5AD69] uppercase tracking-[4px] text-sm font-semibold mb-3">
+          The Aziz Travelland Experience
         </p>
-        <h2 className="text-white font-bold text-3xl sm:text-5xl">
-          Memories That Last Forever
+
+        <h2 className="text-white font-bold text-[32px] sm:text-[45px] font-poppins">
+          Make Your Sri Lankan Journey Special
         </h2>
-        <p className="text-gray-300 mt-5 max-w-2xl mx-auto">
-          Discover what travellers love about exploring the Pearl of the Indian Ocean.
+
+        <p className="text-gray-300 max-w-[650px] mx-auto mt-5 leading-7">
+          Every traveller has a different story. We aim to make planning your
+          Sri Lankan holiday easier with personalised travel arrangements and
+          local assistance.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {testimonials.map((item) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {commitments.map((item) => (
           <div
-            key={item.id}
-            className="bg-[#173D32] border border-[#315344] rounded-xl p-7"
+            key={item.number}
+            className="bg-[#173D32] rounded-2xl p-8 border border-white/10 hover:border-[#D5AD69] transition-all duration-300"
           >
-            <div className="text-[#D5AD69] text-3xl mb-4">★★★★★</div>
-            <p className="text-gray-200 text-sm leading-7">
-              "{item.message}"
+            <span className="text-[#D5AD69] text-sm font-bold">
+              {item.number}
+            </span>
+
+            <h3 className="text-white text-xl font-semibold mt-5 mb-4">
+              {item.title}
+            </h3>
+
+            <p className="text-gray-300 text-sm leading-7">
+              {item.description}
             </p>
-            <div className="border-t border-[#315344] mt-6 pt-5">
-              <h3 className="text-white font-semibold">{item.name}</h3>
-              <p className="text-[#D5AD69] text-sm">{item.country}</p>
-            </div>
           </div>
         ))}
       </div>

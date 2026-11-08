@@ -1,24 +1,24 @@
 
 import Navbar from "./Navbar";
-import CTA from "./CTA";
-import Footer from "./Footer";
-import Testimonials from "./Testimonials";
 import Hero from "./Hero";
-import Business from "./Business";
 import Destinations from "./Destinations";
 import TourPackages from "./TourPackages";
+import Business from "./Business";
+import Testimonials from "./Testimonials";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
+import CTA from "./CTA";
 
 export {
   Navbar,
-  CTA,
-  Footer,
-  Testimonials,
   Hero,
-  Business,
   Destinations,
   TourPackages,
+  Business,
+  Testimonials,
   Contact,
+  Footer,
   WhatsAppButton,
+  CTA,
 };
